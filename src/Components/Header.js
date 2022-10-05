@@ -68,7 +68,7 @@ class Header extends React.Component {
         };
         axios({
             method: 'POST',
-            url: 'http://localhost:2963/userlogin',
+            url: 'https://totamat.herokuapp.com/userlogin',
             headers: { 'Content-Type': 'application/json' },
             data: loginObj
         })
@@ -96,7 +96,7 @@ class Header extends React.Component {
         };
         axios({
             method: 'POST',
-            url: 'http://localhost:2963/userSignUp',
+            url: 'https://totamat.herokuapp.com/userSignUp',
             headers: { 'Content-Type': 'application/json' },
             data: signupobj
         })
